@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="nova-conta">
+        <h1> Criar nova conta</h1>
+        <form>
+        
+          <label>Nome:</label>
+          <input type="text" onblur="validaTextoEmBranco(this, 'statusNome', 'Nome')">
+          <p id="statusNome"></p>
+          
+          
+          <label>Sobrenome:</label>
+          <input type="text" onblur="validaTextoEmBranco(this, 'statusSobrenome', 'Sobrenome')">
+          <p id="statusSobrenome"></p>
+          
+          
+          <label>CPF:</label>
+          <input type="text" onblur="validarCPF(this)">
+          <p id="statusCPF"></p>
+          
+          
+          <label>E-mail:</label>
+          <input type="text">
+          <p id="statusEmail"></p>
+          
+          
+          <label>Senha:</label>
+          <input type="password">
+          <p id="statusSenha"></p>
+          
+          
+          <label>Repita sua senha:</label>
+          <input type="password">
+          <p id="statusRepitaSenha"></p>
+          
+          <div id="areaBotaoConta">
+            <input type="button" value="Criar conta" style="min-width: 100px">
+          </div>
+          
+          
+      </form>
+      </div>
+    
+</body>
+</html>
